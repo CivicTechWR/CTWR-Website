@@ -5,7 +5,7 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #539DDB !default;
+$brand-primary: #2A9599 !default;
 $brand-secondary: #1fb5f6 !default;
 
 $brand-white: #fff;
@@ -1020,14 +1020,25 @@ header{
 .fh5co-staff {
 	// text-align: center;
 	margin-bottom: 30px;
-	img {
+
+	.img-container {
+		height: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		margin-bottom: 20px;
+		padding: 15px;
 		background: $brand-white;
 		-webkit-box-shadow: 0px 10px 30px -13px rgba(0,0,0,0.21);
 		-moz-box-shadow: 0px 10px 30px -13px rgba(0,0,0,0.21);
 		box-shadow: 0px 10px 30px -13px rgba(0,0,0,0.21);
 		@include transition(.3s);
+
+		img {
+			max-height: 100%;
+		}
 	}
+
 	h3 {
 		font-size: 24px;
 		margin-bottom: 1em;
@@ -1041,11 +1052,6 @@ header{
 		font-weight: normal;
 		display: block;
 		font-size: 16px;
-	}
-	&:hover{
-		img{
-			background: rgba($brand-primary,.2);
-		}
 	}
 }
 
@@ -1309,4 +1315,9 @@ input[type="text"] {
 	.js & {
 		opacity: 0;
 	}
+}
+
+.wrap {
+	display: flex;
+	flex-wrap: wrap;
 }

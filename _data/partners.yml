@@ -1,0 +1,78 @@
+- name: TextNow
+  year: 2017, 2018
+  role: Food, Venue, Fees
+  logo: assets/images/logos/textnow.jpg
+
+- name: Communitech
+  year: 2017, 2018
+  role: Venue
+  logo: assets/images/logos/communitech.jpg
+
+- name: SmartWR
+  year: 2018, 2019
+  role: Speakers, Joint events
+  logo: assets/images/logos/smart-waterloo-region.jpg
+
+- name: Idea Exchange
+  year: 2019
+  role: Venue
+  logo: assets/images/logos/idea-exchange.jpg
+
+- name: Axonify
+  year: 2018
+  role: Venue
+  logo: assets/images/logos/axonify.png
+
+- name: Sortable
+  year: 2018
+  role: Venue
+  logo: assets/images/logos/sortable.png
+
+- name: Tulip Retail
+  year: 2017, 2018, 2019
+  role: Venue
+  logo: assets/images/logos/tulip.svg
+
+- name: Chalk.com
+  year: 2017, 2018
+  role: Venue
+  logo: assets/images/logos/chalk.png
+
+- name: City of Waterloo
+  year: 2017
+  role: Speakers, Food
+  logo: assets/images/logos/city-of-waterloo.png
+
+- name: City of Kitchener
+  year: 2017
+  role: Speaker
+  logo: assets/images/logos/city-of-kitchener.svg
+
+- name: Open Food Network Canada
+  year: 2017
+  role: Speaker, Venue
+  logo: assets/images/logos/OFN.png
+
+- name: Smile.io
+  year: 2018, 2019
+  role: Sponsor
+  logo: assets/images/logos/smile.svg
+
+- name: House of Friendship
+  year: 2017
+  role: Speaker
+  logo: assets/images/logos/house-of-friendship.png
+
+- name: Kitchener Public Library
+  year: 2018
+  role: Speaker
+  logo: assets/images/logos/kpl.png
+
+- name: KAFKA - Marie Clair Leblanc Flannigan
+  year: 2018
+  role: Speaker
+  logo: assets/images/logos/marie-clair.jpg
+
+
+
+
