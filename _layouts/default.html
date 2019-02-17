@@ -26,37 +26,36 @@
    -->
 
     <!-- Facebook and Twitter integration -->
-  <meta property="og:title" content=""/>
+  <meta property="og:title" content="{{ page.title }}"/>
   <meta property="og:image" content=""/>
   <meta property="og:url" content=""/>
-  <meta property="og:site_name" content=""/>
-  <meta property="og:description" content=""/>
-  <meta name="twitter:title" content="" />
+  <meta property="og:site_name" content="{{site.title}}"/>
+  <meta property="og:description" content="{{ page.description }}"/>
+  <meta name="twitter:title" content="{{ page.title }}" />
   <meta name="twitter:image" content="" />
   <meta name="twitter:url" content="" />
-  <meta name="twitter:card" content="" />
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="shortcut icon" href="favicon.ico">
 
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
 
   <!-- Animate.css -->
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <!-- Icomoon Icon Fonts-->
-  <link rel="stylesheet" href="assets/css/icomoon.css">
+  <link rel="stylesheet" href="{{'assets/css/animate.css' | relative_url}}">
   <!-- Bootstrap  -->
-  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="{{'assets/css/bootstrap.css' | relative_url}}">
 
   <!-- Flexslider  -->
-  <link rel="stylesheet" href="assets/css/flexslider.css">
+  <link rel="stylesheet" href="{{'assets/css/flexslider.css' | relative_url}}">
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="{{'assets/css/style.css' | relative_url}}">
 
 
   <!-- Modernizr JS -->
-  <script src="assets/js/modernizr-2.6.2.min.js"></script>
+  <script src="{{'assets/js/modernizr-2.6.2.min.js' | relative_url}}"></script>
   <!-- FOR IE9 below -->
   <!--[if lt IE 9]>
   <script src="js/respond.min.js"></script>
@@ -78,21 +77,21 @@
   </div>
 
   <!-- jQuery -->
-  <script src="assets/js/jquery.min.js"></script>
+  <script src="{{'assets/js/jquery.min.js' | relative_url}}"></script>
   <!-- jQuery Easing -->
-  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="{{'assets/js/jquery.easing.1.3.js' | relative_url}}"></script>
   <!-- Bootstrap -->
-  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="{{'assets/js/bootstrap.min.js' | relative_url}}"></script>
   <!-- Waypoints -->
-  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="{{'assets/js/jquery.waypoints.min.js' | relative_url}}"></script>
   <!-- Counters -->
-  <script src="assets/js/jquery.countTo.js"></script>
+  <script src="{{'assets/js/jquery.countTo.js' | relative_url}}"></script>
   <!-- Flexslider -->
-  <script src="assets/js/jquery.flexslider-min.js"></script>
+  <script src="{{'assets/js/jquery.flexslider-min.js' | relative_url}}"></script>
 
   <!-- Main JS (Do not remove) -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/{{ page.custom_js }}"></script>
+  <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
+  <script src="{{ site.baseurl }}/assets/js/{{ page.custom_js }}"></script>
 
   </body>
 </html>

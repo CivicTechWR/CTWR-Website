@@ -8,7 +8,7 @@ keywords: "civic tech, design, policy, municipal politics, technology"
 		<aside id="fh5co-hero" class="js-fullheight">
 			<div class="flexslider js-fullheight">
 				<ul class="slides">
-			   	<li style="background-image: url(assets/images/civic-tech.jpg);">
+			   	<li style="background-image: url({{site.baseurl}}/assets/images/civic-tech.jpg);">
 			   		<div class="overlay-gradient"></div>
 			   		<div class="container">
 			   			<div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
@@ -37,7 +37,7 @@ keywords: "civic tech, design, policy, municipal politics, technology"
 						<div class="col-sm-3 animate-box" data-animate-effect="fadeIn">
 							<div class="fh5co-staff">
 								<div class="img-container">
-									<img class="img-responsive" src="{{partner.logo}}" alt="{{partner.name}}">
+									<img class="img-responsive" src="{{partner.logo | relative_url}}" alt="{{partner.name}}">
 								</div>
 								<h3>{{ partner.name }}</h3>
 								<strong class="role">{{ partner.year }}</strong>
