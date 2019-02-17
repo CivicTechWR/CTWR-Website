@@ -11,6 +11,18 @@
   <meta name="description" content="{{ page.description }}" />
   <meta name="keywords" content="{{ page.keywords }}" />
 
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/images/icons/apple-touch-icon.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/images/icons/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/images/icons/favicon-16x16.png' | relative_url }}">
+  <link rel="manifest" href="{{ 'assets/images/icons/site.webmanifest' | relative_url }}">
+  <link rel="mask-icon" href="{{ 'assets/images/icons/safari-pinned-tab.svg' | relative_url }}" color="#5bbad5">
+  <link rel="shortcut icon" href="{{ 'assets/images/icons/favicon.ico' | relative_url }}">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="msapplication-config" content="{{ 'assets/images/icons/browserconfig.xml' | relative_url }}">
+  <meta name="theme-color" content="#ffffff">
+
   <!--
   //////////////////////////////////////////////////////
 
@@ -33,7 +45,7 @@
   <meta property="og:description" content="{{ page.description }}"/>
   <meta name="twitter:title" content="{{ page.title }}" />
   <meta name="twitter:image" content="" />
-  <meta name="twitter:url" content="" />
+  <meta name="twitter:url" content="{{ page.url }}" />
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="shortcut icon" href="favicon.ico">
