@@ -343,6 +343,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font-primary;
 	font-size: 16px;
 	font-weight: 400;
+	border: none;
 	// @include border-radius(30px);
 	@include transition(.5s);
 	&.btn-md {
@@ -357,6 +358,14 @@ h1, h2, h3, h4, h5, h6 {
 		color: $brand-white !important;
 	}
 }
+
+.btn-default {
+	&:hover, &:focus, &:active {
+		background: darken($brand-primary, 5%)!important;
+		border-color: darken($brand-primary, 5%)!important;
+	}
+}
+
 .btn-primary {
 	background: $brand-primary;
 	color: $brand-white;
