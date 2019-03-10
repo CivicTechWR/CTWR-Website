@@ -357,6 +357,17 @@ h1, h2, h3, h4, h5, h6 {
 		color: $brand-white !important;
 	}
 }
+
+.btn-default {
+	border: 2px solid transparent;
+	color: $brand-primary;
+	&:hover, &:focus, &:active {
+		background: lighten($brand-primary, 58%)!important;
+		border-color: lighten($brand-primary, 58%)!important;
+		color: $brand-primary !important;
+	}
+}
+
 .btn-primary {
 	background: $brand-primary;
 	color: $brand-white;
