@@ -40,11 +40,10 @@
         var elId = "#next-event";
         var venue = nextEvent.venue ? nextEvent.venue.name : "Venue TBD"
 
-        $(elId).find("a").attr("href", nextEvent.link);
         $(elId).find("h3").text(nextEvent.name);
         $(elId).find(".meeting-date").text(dateString)
         $(elId).find(".venue").text(venue)
-        $(elId).find(".link").html("<a class='btn btn-default' href='"+ event.link +"'>More details + RSVP</a>")
+        $(elId).find(".link").html("<a class='btn btn-default' href='"+ nextEvent.link +"'>More details + RSVP</a>")
       }
     }
   });
