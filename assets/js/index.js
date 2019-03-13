@@ -17,7 +17,7 @@
     url: meetupPastEvents,
     dataType: 'JSONP',
     type: 'GET',
-    success: (res) => {
+    success: function(res) {
       $.each(res.data, function(index, event={}) {
           var regex = new RegExp('^(.*?)<\/p>', 'gm')
           var truncatedDescription = regex.exec(event.description)[0]
@@ -39,7 +39,7 @@
     url: meetupNextEvent,
     dataType: 'JSONP',
     type: 'GET',
-    success: (res) => {
+    success: function(res) {
       console.log(res);
       if (res.data.length > 0) {
         var nextEvent = res.data[0];
