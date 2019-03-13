@@ -360,9 +360,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-default {
+	border: 2px solid transparent;
+	color: $brand-primary;
 	&:hover, &:focus, &:active {
-		background: darken($brand-primary, 5%)!important;
-		border-color: darken($brand-primary, 5%)!important;
+		background: lighten($brand-primary, 58%)!important;
+		border-color: lighten($brand-primary, 58%)!important;
+		color: $brand-primary !important;
 	}
 }
 

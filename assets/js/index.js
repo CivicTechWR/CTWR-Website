@@ -1,5 +1,13 @@
 ;(function () {
 
+  function parseDateTime(dateString, timeString) {
+    var year, month, day, hours, minutes;
+    [year, month, day] = dateString.split("-");
+    [hours, minutes] = timeString.split(":")
+
+    return new Date(year, (month -1), day, hours, minutes)
+  }
+
   'use strict';
 
   var meetupPastEvents = "https://api.meetup.com/civictechwr/events?photo-host=public&page=3&desc=true&status=past"
@@ -35,16 +43,15 @@
       console.log(res);
       if (res.data.length > 0) {
         var nextEvent = res.data[0];
-        var date = new Date(nextEvent.local_date + ", " + nextEvent.local_time)
+        var date = parseDateTime(nextEvent.local_date, nextEvent.local_time)
         var dateString = date.toLocaleString('en-US', { year: 'numeric', month: 'short', day: 'numeric', hour12: true, hour: 'numeric', minute: "numeric" })
         var elId = "#next-event";
         var venue = nextEvent.venue ? nextEvent.venue.name : "Venue TBD"
 
-        $(elId).find("a").attr("href", nextEvent.link);
         $(elId).find("h3").text(nextEvent.name);
         $(elId).find(".meeting-date").text(dateString)
         $(elId).find(".venue").text(venue)
-        $(elId).find(".link").html("<a class='btn btn-default' href='"+ event.link +"'>More details + RSVP</a>")
+        $(elId).find(".link").html("<a class='btn btn-default' href='"+ nextEvent.link +"'>More details + RSVP</a>")
       }
     }
   });
