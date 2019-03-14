@@ -1,0 +1,27 @@
+- name: Civic Tech Toronto
+  website: http://civictech.ca/
+  logo: assets/images/logos/ctto.png
+
+- name: Beta City YEG
+  website: https://betacity.ca/
+  logo: assets/images/logos/edmonton.png
+
+- name: Civic Tech Ottawa
+  website: http://ottawacivictech.ca/
+  logo: assets/images/logos/ottawa.jpg
+
+- name: Civic Tech London
+  website: http://civictechlondon.ca/
+  logo: assets/images/logos/london.jpg
+
+- name: Civic Tech Fredericton
+  website: https://www.civictechfredericton.com/
+  logo: assets/images/logos/fredericton.jpg
+
+- name: Civic Tech Vancouver
+  website: https://www.meetup.com/Civic-Tech-Vancouver/
+  logo: assets/images/logos/vancouver.jpg
+
+- name: Civic Tech YYC
+  website: https://twitter.com/CivicTechYYC
+  logo: assets/images/logos/calgary.jpg
