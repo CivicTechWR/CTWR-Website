@@ -913,6 +913,14 @@ header{
 			height: inherit;
 		}
 	}
+
+	.iframe-container {
+		display: flex;
+		height: 700px;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
 	.desc{
 		padding: 5em;
 		background: rgba($brand-primary,.9);
