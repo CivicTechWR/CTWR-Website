@@ -9,15 +9,15 @@ keywords: "civic tech, design, policy, municipal politics, technology"
 		<aside id="fh5co-hero" class="js-fullheight">
 			<div class="flexslider js-fullheight">
 				<ul class="slides">
-			   	<li style="background-image: url(assets/images/communitech.jpg);">
+			   	<li style="background-image: url(assets/images/hacknight1.jpg);">
 			   		<div class="overlay-gradient"></div>
 			   		<div class="container">
 			   			<div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
 			   				<div class="slider-text-inner">
 			   					<div class="desc">
-			   						<span>who we are</span>
+			   						<span>est. 2017</span>
 			   						<h2>About us</h2>
-			   						<p>We're a community group that brings together people from different sectors and industries to actively solve issues facing our local community using technology-based solutions.</p>
+			   						<p>We're a community group that brings together people from different sectors and industries to actively solve issues facing our local community using design and technology.</p>
 			   					</div>
 			   				</div>
 			   			</div>
@@ -30,29 +30,58 @@ keywords: "civic tech, design, policy, municipal politics, technology"
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 animate-box text-center">
-						<h2 class="intro-heading">Events</h2>
-						<p>We meet every two weeks, alternating between speaker sessions and hacknights. Our speakers are community leaders such as someone from a local non-profit, government, industry, or any enaged citizen - what matters is that they have something inspiring or educational to share with our group. During both our speaker sessions and our hacknights, we also provide space and time for people to come and work together on civic tech projects. Join us at our next hacknight!</p>
+						<h2 class="intro-heading">The Civic Tech Movement</h2>
+						<p>Civic Tech Waterloo Region was founded in July 2017. We were inspired by similar organizations like CivicTechTO, Beta City YEG, and Code for America Brigades.</p>
+						<p>We are part of a larger civic tech movement, with groups like ours self-organizing across Canada. Below you can explore the other communities in the civic tech network.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row wrap">
+					{% for group in site.data.civic_tech_groups %}
+						<div class="col-sm-3 animate-box" data-animate-effect="fadeIn">
+							<a href="{{group.website}}">
+								<div class="fh5co-staff">
+									<div class="img-container">
+										<img class="img-responsive" src="{{group.logo | relative_url}}" alt="{{group.name}}">
+									</div>
+									<h3 class="text-center">{{ group.name }}</h3>
+								</div>
+							</a>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+
+		</div>
+
+		<div id="fh5co-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 animate-box text-center">
+						<h2 class="intro-heading">How it works</h2>
+						<p>We get together every two weeks for "hacknights" where we work various projects that combine design and technology for the public good. Anyone can pitch a project idea to the group to seek out collaborators and support. Every second hacknight we have a guest speaker who talks about a project or initiative they are working on.</p>
+						<p>We welcome participants from all backgrounds and skill levels - you don't have to be a techie to join! If you're interested in design, technology, policy, activism, community development, problem solving, or local politics, this is the place for you.</p>
 					</div>
 				</div>
 			</div>
 		</div>
+
 
 		<div id="fh5co-featured">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="post-entry">
 						<div class="col-md-6 col-md-push-6 nopaddingbottom animate-box">
-							<div class="post-image" style="background-image: url(assets/images/hacknight.jpg);"></div>
+							<div class="post-image" style="background-image: url(assets/images/hacknight2.jpg);"></div>
 						</div>
 						<div class="col-md-6 col-md-pull-5 animate-box">
 							<div class="display-tc" id="next-event">
 								<div class="desc">
-									<span class="date">Next meeting</span>
-									<h3>Coming Soon!</h3>
-									<p class="meeting-date"></p>
-									<p class="time"></p>
-									<p class="venue"></p>
-									<p class="link"></p>
+									<span class="date">TL;DR: Be a nice human</span>
+									<h3>Code of Conduct</h3>
+									<p>Civic Tech Waterloo Region is dedicated to providing a harassment-free environment for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age or religion or technical skill level. We do not tolerate harassment of participants in any form.</p>
 								</div>
 							</div>
 						</div>
@@ -60,19 +89,4 @@ keywords: "civic tech, design, policy, municipal politics, technology"
 				</div>
 			</div>
 		</div>
-
-		<div id="fh5co-about">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Past events</h2>
-						<p>Take a peek at what we've been up to lately!</p>
-					</div>
-				</div>
-				<div class="row">
-
-				</div>
-			</div>
-		</div>
-
 
