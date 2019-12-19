@@ -36,9 +36,10 @@ When developing, please create your own branch off of the `master` branch and wh
 ### Troubleshooting
 
 #### Git
-Git is a version control system (VCS) that works with Github, which is where the code for this website is hosted.
+Git is a version control system (VCS) that works with Github, which is where the code for this website is hosted and where you are right now. You'll need to have Git installed and have a basic understanding of how to use it. 
 
 [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+[Intro to Git and how to use it](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/)
 
 #### Ruby
 Check what version of Ruby you're on by running `ruby -v` in the command line. If it's less than 2.5.1, you'll need to upgrade or install another version of Ruby alongside the current one. RVM is a program to help manage your Ruby versions. RVM stands for Ruby Version Manager.
@@ -47,10 +48,10 @@ Check what version of Ruby you're on by running `ruby -v` in the command line. I
 Once you have RVM installed, you can install the correct version of Ruby with the command `rvm install 2.5.1`
 
 #### Bundler
-If you don't have bundler, you can install it with `gem install bundler`
+Bundler is a dependency manager. If you don't have bundler, you can install it with `gem install bundler`
 
 #### Jeykyll
-Jekyll has installation guides for macOS, Ubuntu, and Windows: [Install Jekyll](https://jekyllrb.com/docs/installation/)
+Jeykyll is the static site builder we use. Jekyll has installation guides for macOS, Ubuntu, and Windows: [Install Jekyll](https://jekyllrb.com/docs/installation/)
 
 If you have any other issues or questions, you can [post the issue on this repo](https://github.com/CivicTechWR/ctwr_website/issues) or contact Sharon - *s-kennedy* on Github or *sharon* on the CTWR slack.
 
