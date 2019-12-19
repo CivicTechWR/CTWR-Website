@@ -39,6 +39,7 @@ When developing, please create your own branch off of the `master` branch and wh
 Git is a version control system (VCS) that works with Github, which is where the code for this website is hosted and where you are right now. You'll need to have Git installed and have a basic understanding of how to use it. 
 
 [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
 [Intro to Git and how to use it](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/)
 
 #### Ruby
