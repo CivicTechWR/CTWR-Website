@@ -21,6 +21,7 @@ baseurl: "/ctwr_website" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: civictechwr
 github_username:  CivicTechWR
+slack_invite: "https://join.slack.com/t/civictechwr/shared_invite/zt-2hk4c93hv-DEIbxR_z1xKj8cZmayVHTw"
 
 # Build settings
 markdown: kramdown
